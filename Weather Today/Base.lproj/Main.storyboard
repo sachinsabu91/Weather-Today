@@ -12,7 +12,7 @@
         <!--Weather Today-->
         <scene sceneID="ROh-rK-jRU">
             <objects>
-                <tableViewController id="S5X-ds-THZ" sceneMemberID="viewController">
+                <tableViewController id="S5X-ds-THZ" customClass="WeatherListTableViewController" customModule="Weather_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="V7j-Qs-CKq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

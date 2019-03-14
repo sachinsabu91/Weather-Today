@@ -13,7 +13,7 @@
         <!--Add City-->
         <scene sceneID="dxt-Da-6Jc">
             <objects>
-                <viewController id="y4a-iE-M9y" sceneMemberID="viewController">
+                <viewController id="y4a-iE-M9y" customClass="AddWeatherCityViewController" customModule="Weather_Today" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9US-d8-5uX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
