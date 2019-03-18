@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044F840E223F6CB800C61EE1 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F840D223F6CB800C61EE1 /* WeatherCell.swift */; };
 		048E94A5223A95E800D5D801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E94A4223A95E800D5D801 /* AppDelegate.swift */; };
 		048E94AA223A95E800D5D801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048E94A8223A95E800D5D801 /* Main.storyboard */; };
 		048E94AC223A95EA00D5D801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048E94AB223A95EA00D5D801 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044F840D223F6CB800C61EE1 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		048E94A1223A95E800D5D801 /* Weather Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Today.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		048E94A4223A95E800D5D801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		048E94A9223A95E800D5D801 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044F840C223F6C9F00C61EE1 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				044F840D223F6CB800C61EE1 /* WeatherCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
 		048E9498223A95E800D5D801 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		048E94A3223A95E800D5D801 /* Weather Today */ = {
 			isa = PBXGroup;
 			children = (
+				044F840C223F6C9F00C61EE1 /* Custom Cell */,
 				048E94C0223AA03300D5D801 /* Controllers */,
 				048E94A4223A95E800D5D801 /* AppDelegate.swift */,
 				048E94BE223A9DDA00D5D801 /* AddCity.storyboard */,
@@ -150,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044F840E223F6CB800C61EE1 /* WeatherCell.swift in Sources */,
 				048E94C2223AA07400D5D801 /* WeatherListTableViewController.swift in Sources */,
 				048E94C4223AA11B00D5D801 /* AddWeatherCityViewController.swift in Sources */,
 				048E94A5223A95E800D5D801 /* AppDelegate.swift in Sources */,

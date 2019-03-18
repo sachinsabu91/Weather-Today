@@ -18,13 +18,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bhi-Kp-nDo">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherCell" rowHeight="100" id="bhi-Kp-nDo" customClass="WeatherCell" customModule="Weather_Today" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bhi-Kp-nDo" id="sJP-2x-3Od">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdD-nj-kYt">
+                                            <rect key="frame" x="16" y="36.5" width="53" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYH-Qs-pju">
+                                            <rect key="frame" x="281" y="30" width="78" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="vYH-Qs-pju" firstAttribute="centerY" secondItem="sJP-2x-3Od" secondAttribute="centerY" id="32O-r0-DU3"/>
+                                        <constraint firstItem="vYH-Qs-pju" firstAttribute="trailing" secondItem="sJP-2x-3Od" secondAttribute="trailingMargin" id="DIe-cK-aAN"/>
+                                        <constraint firstItem="OdD-nj-kYt" firstAttribute="leading" secondItem="sJP-2x-3Od" secondAttribute="leadingMargin" id="VqA-no-ozG"/>
+                                        <constraint firstItem="OdD-nj-kYt" firstAttribute="centerY" secondItem="sJP-2x-3Od" secondAttribute="centerY" id="bWJ-WA-x2E"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cityNameLabel" destination="OdD-nj-kYt" id="aGP-xk-Qh5"/>
+                                    <outlet property="temperatureLabel" destination="vYH-Qs-pju" id="27a-cH-nrG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
