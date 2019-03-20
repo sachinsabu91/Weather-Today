@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042636C6224130150093E282 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042636C5224130150093E282 /* Webservice.swift */; };
 		044F840E223F6CB800C61EE1 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F840D223F6CB800C61EE1 /* WeatherCell.swift */; };
 		048E94A5223A95E800D5D801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E94A4223A95E800D5D801 /* AppDelegate.swift */; };
 		048E94AA223A95E800D5D801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048E94A8223A95E800D5D801 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042636C5224130150093E282 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		044F840D223F6CB800C61EE1 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		048E94A1223A95E800D5D801 /* Weather Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Today.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		048E94A4223A95E800D5D801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042636C422412FFE0093E282 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				042636C5224130150093E282 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		044F840C223F6C9F00C61EE1 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 		048E94A3223A95E800D5D801 /* Weather Today */ = {
 			isa = PBXGroup;
 			children = (
+				042636C422412FFE0093E282 /* Services */,
 				044F840C223F6C9F00C61EE1 /* Custom Cell */,
 				048E94C0223AA03300D5D801 /* Controllers */,
 				048E94A4223A95E800D5D801 /* AppDelegate.swift */,
@@ -164,6 +175,7 @@
 				044F840E223F6CB800C61EE1 /* WeatherCell.swift in Sources */,
 				048E94C2223AA07400D5D801 /* WeatherListTableViewController.swift in Sources */,
 				048E94C4223AA11B00D5D801 /* AddWeatherCityViewController.swift in Sources */,
+				042636C6224130150093E282 /* Webservice.swift in Sources */,
 				048E94A5223A95E800D5D801 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
